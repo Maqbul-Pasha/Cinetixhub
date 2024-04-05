@@ -30,10 +30,9 @@ else {
 <h2>CineTixHub Admin Panel</h2>
 </div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Hi, 
- <?php $up = explode("@", $_SESSION['user']); 
-         $un = $up[0];?>
-        echo $un;?></a>
+     <a class="navbar-brand" href="#">Hi, 
+     <?php $up = explode("@", $_SESSION['user']);$un = $up[0]; echo $un;?>
+     </a>
  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -65,34 +64,3 @@ else {
 </nav>
 <!-- navigation bar end -->
 
-<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
-<!--   <a class="navbar-brand" href=" -->
-  <?php echo BASE_PATH; ?>">Hi, <?php echo $un; ?>
-<!--   </a> -->
-
-<!--   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> -->
-<!--     <span class="navbar-toggler-icon"></span> -->
-<!--   </button> -->
-<!--   <div class="collapse navbar-collapse" id="navbarNav"> -->
-<!--     <ul class="navbar-nav ml-auto"> -->
-<!--       <li class="nav-item active"> -->
-        <a class="nav-link" href="<?php echo BASE_PATH; ?>/index.php">Home <span class="sr-only">(current)</span></a>
-<!--       </li> -->
-<!--       <li class="nav-item"> -->
-        <a class="nav-link" href="<?php echo BASE_PATH; ?>/admin/registeradmin.php">Register Admin</a>
-<!--       </li> -->
-<!--       <li class="nav-item"> -->
-        <a class="nav-link" href="<?php echo BASE_PATH; ?>/admin/listadmins.php">Admins</a>
-<!--       </li> -->
-<!--       <li class="nav-item"> -->
-        <a class="nav-link" href="<?php echo BASE_PATH; ?>/admin/listcategories.php">Categories</a>
-<!--       </li> -->
-<!--       <li class="nav-item"> -->
-        <a class="nav-link" href="<?php echo BASE_PATH; ?>/admin/genre/listgenre.php">Genre</a>
-<!--       </li> -->
-<!--       <li class="nav-item"> -->
-        <a class="btn btn-outline-danger" href="<?php echo BASE_PATH; ?>/admin/logout.php">Logout</a>
-<!--       </li> -->
-<!--     </ul> -->
-<!--   </div> -->
-<!-- </nav> -->
